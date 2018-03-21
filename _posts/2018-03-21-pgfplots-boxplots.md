@@ -18,11 +18,15 @@ This is the code I used to generate the figure ([link to code file](/snippets/pg
 ```TeX
 \documentclass{standalone}
 \usepackage{pgfplots}
-\usepgfplotslibrary{colorbrewer} % Nice color sets, see see http://colorbrewer2.org/	
+% Nice color sets, see see http://colorbrewer2.org/	
+\usepgfplotslibrary{colorbrewer}
+% initialize Set1-4 from colorbrewer (we're comparing 4 classes),
 \pgfplotsset{compat = 1.15, 
-			 cycle list/Set1-8} % initialize Set1-4 from colorbrewer (we're comparing 4 classes), 
-\usetikzlibrary{pgfplots.statistics, pgfplots.colorbrewer} % Tikz is loaded automatically by pgfplots
-\usepackage{pgfplotstable} % provides \pgfplotstabletranspose
+			 cycle list/Set1-8} 
+% Tikz is loaded automatically by pgfplots
+\usetikzlibrary{pgfplots.statistics, pgfplots.colorbrewer} 
+% provides \pgfplotstabletranspose
+\usepackage{pgfplotstable}
 \usepackage{filecontents}
 
 \begin{filecontents*}{data.csv}
@@ -35,7 +39,8 @@ This is the code I used to generate the figure ([link to code file](/snippets/pg
 \begin{document}
 \begin{tikzpicture}
 	\pgfplotstableread[col sep=comma]{data.csv}\csvdata
-	\pgfplotstabletranspose\datatransposed{\csvdata} % Boxplot groups columns, but we want rows
+	% Boxplot groups columns, but we want rows
+	\pgfplotstabletranspose\datatransposed{\csvdata} 
 	\begin{axis}[
 		boxplot/draw direction = y,
 		x axis line style = {opacity=0},

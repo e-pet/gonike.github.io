@@ -15,7 +15,7 @@ Some "features" of this plot that took me a while to set up correctly:
 * Clean plot without any unnecessary clutter
 * Getting pgfplots to work with data in row format (instead of column format, as expected by the boxplot  function)
 
-This is the code I used to generate the figure ([link to code file](https://github.com/gonike/gonike.github.io/blob/master/snippets/pgfplots-boxplot.tex):
+This is the code I used to generate the figure ([link to code file](https://github.com/gonike/gonike.github.io/blob/master/snippets/pgfplots-boxplot.tex)):
 ``` TeX
 \documentclass{standalone}
 \usepackage{pgfplots}

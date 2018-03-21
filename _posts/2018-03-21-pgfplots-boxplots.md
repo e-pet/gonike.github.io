@@ -5,7 +5,7 @@ published: true
 ---
 Recently, I wanted to create boxplots from a data file for a paper I was writing using [pgfplots](http://pgfplots.sourceforge.net/). Turns out that's more difficult than expected, especially since the (otherwise very useful) documentation is a bit meager in this point.
 
-To save others the hassle, this is the result of my efforts ([link to PDF version](/images/2018-03-21-pgfplots-boxplot.pdf)):
+To save others the hassle, here's the result of my efforts ([link to PDF version](/images/2018-03-21-pgfplots-boxplot.pdf)):
 
 ![Boxplot generated using pgfplots](/images/2018-03-21-pgfplots-boxplot.png){:height="400px"}
 
@@ -22,8 +22,7 @@ This is the code I used to generate the figure ([link to code file](https://gith
 % Nice color sets, see see http://colorbrewer2.org/	
 \usepgfplotslibrary{colorbrewer}
 % initialize Set1-4 from colorbrewer (we're comparing 4 classes),
-\pgfplotsset{compat = 1.15, 
-			 cycle list/Set1-8} 
+\pgfplotsset{compat = 1.15, cycle list/Set1-8} 
 % Tikz is loaded automatically by pgfplots
 \usetikzlibrary{pgfplots.statistics, pgfplots.colorbrewer} 
 % provides \pgfplotstabletranspose

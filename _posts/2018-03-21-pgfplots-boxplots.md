@@ -3,7 +3,7 @@ layout: post
 title: Beautiful boxplots in pgfplots
 published: true
 ---
-Recently, I wanted to create boxplots from a data file for a paper I was writing using [pgfplots](). Turns out that's more difficult than expected, especially since the (otherwise very useful) documentation is a bit meager in this point.
+Recently, I wanted to create boxplots from a data file for a paper I was writing using [pgfplots](http://pgfplots.sourceforge.net/). Turns out that's more difficult than expected, especially since the (otherwise very useful) documentation is a bit meager in this point.
 
 To save others the hassle, this is the result of my efforts ([link to PDF version](/images/2018-03-21-pgfplots-boxplot.pdf)):
 ![Boxplot generated using pgfplots](/images/2018-03-21-pgfplots-boxplot.png)

@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
-### More Information
-
-A place to include any other types of information that you'd like to include about yourself.
-
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+(Coming)
+
+### License ###
+
+The content of this blog itself is licensed under the [Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0/us/deed.en_US), and the underlying source code used to format and display that content, as well as source code examples presented in the blog are licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).

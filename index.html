@@ -7,8 +7,9 @@ layout: default
     <article class="post">
 
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }},</span>
-      <img src="{{ site.baseurl }}/images/{{ post.image }}">
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      
+      <img src="{{ site.baseurl }}{{ post.image }}">
       
       <div class="entry">
         {{ post.excerpt }}

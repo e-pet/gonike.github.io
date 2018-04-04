@@ -6,8 +6,15 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      
+      {% if post.image %}
+        <p, style="margin-top:0.5cm;">
+          <img src="{{ site.baseurl }}{{ post.image }}", alt="", width="300">
+        </p>
+      {% endif %}
+      
       <div class="entry">
         {{ post.excerpt }}
       </div>

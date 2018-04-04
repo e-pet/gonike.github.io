@@ -2,11 +2,13 @@
 layout: post
 title: Beautiful boxplots in pgfplots
 published: true
+image: /images/2018-03-21-pgfplots-boxplot.png
 ---
 Recently, I wanted to create boxplots from a data file for a paper I was writing using [pgfplots](http://pgfplots.sourceforge.net/). Turns out that's more difficult than expected, especially since the (otherwise very useful) documentation is a bit meager in this point.
 
-To save others the hassle, this is the result of my efforts ([link to PDF version](/images/2018-03-21-pgfplots-boxplot.pdf)):
-![Boxplot generated using pgfplots](/images/2018-03-21-pgfplots-boxplot.png)
+To save others the hassle, here's the result of my efforts ([link to PDF version](/images/2018-03-21-pgfplots-boxplot.pdf)):
+
+![Boxplot generated using pgfplots](/images/2018-03-21-pgfplots-boxplot.png){:height="400px"}
 
 Some "features" of this plot that took me a while to set up correctly:
 * Box design with fill color and black border
@@ -14,15 +16,14 @@ Some "features" of this plot that took me a while to set up correctly:
 * Clean plot without any unnecessary clutter
 * Getting pgfplots to work with data in row format (instead of column format, as expected by the boxplot  function)
 
-This is the code I used to generate the figure ([link to code file](/snippets/pgfplots-boxplot.tex):
-```TeX
+This is the code I used to generate the figure ([link to code file](https://github.com/gonike/gonike.github.io/blob/master/snippets/pgfplots-boxplot.tex)):
+``` TeX
 \documentclass{standalone}
 \usepackage{pgfplots}
 % Nice color sets, see see http://colorbrewer2.org/	
 \usepgfplotslibrary{colorbrewer}
 % initialize Set1-4 from colorbrewer (we're comparing 4 classes),
-\pgfplotsset{compat = 1.15, 
-			 cycle list/Set1-8} 
+\pgfplotsset{compat = 1.15, cycle list/Set1-8} 
 % Tikz is loaded automatically by pgfplots
 \usetikzlibrary{pgfplots.statistics, pgfplots.colorbrewer} 
 % provides \pgfplotstabletranspose

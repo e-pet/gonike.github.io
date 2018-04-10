@@ -6,7 +6,7 @@ title: Don't use standard cubic spline interpolation
 ---
 ... or at least, know exactly what you're doing.
 
-Following my numerics course in university, I somehow had this idea that standard cubic splines were a good thing (tm) and this is what one should generally do when solving an interpolation problem in practice.
+Following my numerics course in university, I somehow had this idea that standard cubic splines were a good thing (tm) and that this is what one should generally do when solving an interpolation problem in practice.
 Let's see why this may - in many cases - be a bad idea, and how we can do better.
 
 ### How does standard cubic spline interpolation work?
